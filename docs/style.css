@@ -1,0 +1,123 @@
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            background-image: url('ba2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            position: relative;
+            background-image: url('ba1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .form-container h2 {
+    color: #333;
+    text-align: center; /* Mantém o texto centralizado */
+    margin-bottom: -15px;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative; /* Mantido para z-index, se necessário */
+    z-index: 1;         /* Mantido para garantir que fique sobre a imagem de fundo do container, se houver sobreposição */
+    /* Linhas removidas/comentadas para tirar a caixa branca: */
+    /* background-color: rgba(255, 255, 255, 0.85); */
+    /* padding: 5px; */
+    /* border-radius: 5px; */
+    /* display: inline-block; */ /* Removido para que o h2 se comporte como bloco padrão e o text-align: center funcione nele todo */
+}
+        .input-group {
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 6px 10px;
+            border-radius: 5px;
+            width: -moz-fit-content;
+            width: fit-content;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            background-color: grgba(255, 255, 255, 0.8);
+        }
+        
+        .input-group input::placeholder {
+            color: #888;
+            font-weight: 300;
+        }
+
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #6a5af9;
+            box-shadow: 0 0 0 2px rgba(106, 90, 249, 0.2);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #080808;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: relative;
+            z-index: 1;
+        }
+
+        .submit-btn:hover {
+            background-color: #086308;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 5px;
+            /* display: none; Comentado pois o JS controla via inline-block */
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 4px 8px;
+            border-radius: 4px;
+            position: relative;
+            z-index: 1;
+            display: none; /* Inicialmente oculto, JS muda para inline-block */
+        }
+    
